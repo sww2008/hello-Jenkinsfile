@@ -14,6 +14,9 @@ pipeline {
             }
         }
         stage('Test') {
+            environment {
+                LOG_LEVEL='INFO TEST'
+            }
             steps {
                 echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}"
             }
