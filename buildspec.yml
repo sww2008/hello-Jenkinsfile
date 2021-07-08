@@ -1,1 +1,17 @@
+AppPipeline: 
+  Type: AWS::CodePipeline::Pipeline 
+  Properties: 
+    RoleArn:
+      Ref: CodePipelineServiceRole 
+    Stages: 
+      Name: Build 
+        Actions: 
+          - 
+            Name: step1
+            echo 'Building..': 
+              
+
+
+
+
 
